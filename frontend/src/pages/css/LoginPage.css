@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-container .login-right {
+    background-color: rgba(13, 63, 13, 0.601);
+    width: 50%;
+    height: 100%;
+}
+
+.login-container .login-left {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 50px;
+    width: 50%;
+    height: 100%;
+    padding: 150px;
+}
+
+.login-container .login-left .signin-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10%;
+}
+
+.login-container .login-left .signin-header .signin-header-account-message{
+    color: rgba(48, 48, 48, 0.687);
+}
+
+.login-container .login-left .signin-header span{
+    color: rgba(0, 128, 0, 0.763);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: bold;
+}
+
+.login-container .login-left .login-metrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 175px;
+}
+
+.login-container .login-left .login-metrics label{
+    color: rgba(48, 48, 48, 0.687);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-container .login-left .login-metrics label input{
+    width: 400px;
+    height: 45px;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+.login-container .login-left .login-metrics label input:focus{
+    outline: none;
+}
