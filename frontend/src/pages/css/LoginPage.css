@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +9,12 @@
 .login-container {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .login-container .login-right {
     background-color: rgba(13, 63, 13, 0.601);
     width: 50%;
-    height: 100%;
 }
 
 .login-container .login-left {
@@ -22,8 +23,8 @@
     background-color: white;
     gap: 50px;
     width: 50%;
-    height: 100%;
-    padding: 150px;
+    padding-left: 200px;
+    padding-top: 100px;
 }
 
 .login-container .login-left .signin-header {
@@ -42,6 +43,11 @@
     text-decoration: underline;
     text-underline-offset: 2px;
     font-weight: bold;
+}
+
+.login-container .login-left .signin-header span:hover{
+    color: rgba(0, 128, 0, 0.408);
+    cursor: pointer;
 }
 
 .login-container .login-left .login-metrics {
@@ -68,4 +74,74 @@
 
 .login-container .login-left .login-metrics label input:focus{
     outline: none;
+}
+
+.login-container .login-left .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    width: min(396px);
+}
+
+ .login-container .login-left .remember-forgot p{
+    color: green;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+ .login-container .login-left .remember-forgot p:hover{
+    color: rgba(0, 128, 0, 0.465);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: pointer;
+}
+
+.login-container .login-left .signin-button{
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(1, 97, 1, 0.478);
+    width: 400px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.login-container .login-left .signin-button:hover{
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(1, 97, 1, 0.313);
+    cursor: pointer;
+}
+
+
+.login-container .login-left .google-signin{
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+}
+
+.login-container .login-left .google-signin:hover{
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+
+.login-container .login-left .google-signin img{
+    height: 40px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .login-container .login-right {
+        display: none;
+    }
+    .login-container .login-left {
+        width: 100%;
+        height: 100%;
+        padding: 20%;
+    }
 }
